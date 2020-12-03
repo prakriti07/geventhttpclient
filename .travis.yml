@@ -33,7 +33,7 @@ jobs:
       - CIBW_SKIP="cp33 cp34"
   - stage: build
     os: osx
-    osx_image: xcode11.6
+    osx_image: xcode12.2
     language: generic
     install:
       # Python 3 is needed to run cibuildwheel
