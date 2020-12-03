@@ -38,6 +38,7 @@ jobs:
     install:
       # Python 3 is needed to run cibuildwheel
       - if [ "${TRAVIS_OS_NAME:-}" == "osx" ]; then
+          softwareupdate --all --install --force
           brew update;
           brew upgrade python;
           true;
